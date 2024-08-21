@@ -21,6 +21,7 @@ import mui from '../../../../assets/mui.png';
 import bootstrap from '../../../../assets/bootstrap.png'
 import tailwind from '../../../../assets/tailwind.png';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import { FaGithub } from "react-icons/fa";
 export default function ProjectDetail({ params }) {
     const workid = params.slug;
 
@@ -115,7 +116,7 @@ export default function ProjectDetail({ params }) {
 
                         <Box sx={{pt: 3 ,display:"flex",width:{xs:"90%",md:"80%",lg:"90%",justifyContent:"space-between"}}}>
                             <Button variant="contained" sx={{ fontSize:{xs:"10px",md:"12px",lg:"14px"},borderRadius: "30px", backgroundColor: "#9B78FF" }}>Click to Link</Button>
-                            <Button variant="outline" sx={{ fontSize:{xs:"10px",md:"12px",lg:"14px"},visibility: {xs:"visible",},borderRadius: "30px",  }}>Link to Github</Button>
+                            <Button variant="outline" sx={{ display:"flex",fontSize:{xs:"10px",md:"12px",lg:"14px"},visibility: {xs:"visible",},borderRadius: "30px",  }}><FaGithub style={{paddingRight:"10px"}}/>Link to Github</Button>
                         </Box>
 
                     
