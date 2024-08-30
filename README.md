@@ -1,7 +1,7 @@
 
-# Project Resume 
+# Project Resume with Responsive
 
-This project is a landing page website for Pensook. It is a cooperative education project that I worked on using React.js and Next.js, with Material UI for CSS styling. It includes API integration to fetch data from the backend and features a text editor for editing blog content that can be displayed.
+This project is a resume website that will display my CV and showcase the skills and projects I have worked on.
 
 
 ## Tech Stack
