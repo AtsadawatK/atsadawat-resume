@@ -17,6 +17,9 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import pensookWeb from '../../assets/pensookWeb.png';
 import resumeWeb from '../../assets/resume.png';
+import classroom from "../../assets/classroom.png"
+import crypto from "../../assets/crypto.png"
+import nike from "../../assets/nike.png"
 import Image from 'next/image'
 export default function Projects() {
   const [filter, setFilter] = React.useState("1");
@@ -28,28 +31,42 @@ export default function Projects() {
 
   const WorkList = [
     {
-      id:'1',
+      id:1,
       label: "Pensook Landing Page",
-      detail : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s ",
+      detail : "This project is a landing page website for Pensook. It is a cooperative education project that I worked on using React.js and Next.js, with Material UI for CSS styling. It includes API integration to fetch data from the backend and features a text editor for editing blog content that can be displayed.",
       date:"1 FEB 2024",
       img: pensookWeb,
     }
     ,
     {
-      id:'2',
+      id:2,
       label: "Resume",
-      detail : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s ",
+      detail : "This project is a resume website that will display my CV and showcase the skills and projects I have worked on.",
       date:"2 MAY 2024",
       img: resumeWeb,
     }
     ,
     {
-      id:'3',
+      id:3,
       label: "Classroom",
-      detail : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s ",
+      detail : "This project is a classroom website for social studies, which will include various lessons with PDFs attached to each lesson.",
       date:"8 JUL 2024",
-      img: resumeWeb,
-    }
+      img: classroom,
+    },
+    {
+      id:4,
+      label: "CryptoCurrency",
+      detail : "This project is a website that will display cryptocurrency prices by fetching data from the CoinMarketCap and CoinGecko APIs. It will provide real-time coin prices, information on various exchanges, rankings, and popular coins, along with displaying graphs for different cryptocurrencies.",
+      date:"8 JUL 2024",
+      img: crypto,
+    },
+    {
+      id:4,
+      label: "Nike Shop",
+      detail : "This project is a Nike shop website that involves translating a design into a website. It will display a list of products and allow users to add items to their cart.",
+      date:"8 JUL 2024",
+      img: nike,
+    },
     ,
     
     

@@ -22,7 +22,7 @@ export default function Skills() {
 
   const handleChange = (event, newValue) => {
     settabSkill(newValue);
-
+    
   };
 
   const HardSkillList = [
@@ -37,7 +37,7 @@ export default function Skills() {
     {
       name: "JavaScript",
       image : js,
-    },
+    },  
     {
       name: "React.js",
       image : react,
@@ -46,7 +46,10 @@ export default function Skills() {
       name: "Next.js",
       image : next,
     },
-    
+    {
+      name: "Vue.js",
+      image : vue,
+    },
     {
       name: "Mui",
       image : mui,
@@ -59,7 +62,7 @@ export default function Skills() {
       name: "Tailwind",
       image : tailwind,
     },
-
+   
   ];
 
   const SoftSkillList = [
@@ -74,7 +77,7 @@ export default function Skills() {
     {
       name: "Time management",
       image : "",
-    },
+    },  
     {
       name: "Team Work",
       image : "",
@@ -83,8 +86,8 @@ export default function Skills() {
       name: "Attention to detail",
       image : "",
     },
-
-
+    
+   
   ];
 
 
@@ -94,33 +97,33 @@ export default function Skills() {
    <Grid container sx={{px:{xs:0,lg:10,xl:20,display:"flex",justifyContent:"center",height:"100%"}}}>
     <Box sx={{backgroundColor:"#ffffff",display:"flex",width:"100%",height: {xs:"calc(100vh - 50px)",md:"calc(100vh - 60px)",lg:"calc(100vh - 80px)"},maxWidth:"1920px",position:"relative",overflowX:"hidden",}}>
         <Grid item xs={12} >
-
+        
       <Tabs variant="fullWidth" value={tabSkill} onChange={handleChange}  centered sx={{width:"100%","& .MuiTabs-indicator": {backgroundColor:"#FF8484 !important" ,},}}>
         <Tab label="Hard Skill" sx={{
           height:"80px",
-          "&.Mui-selected": {
+          "&.Mui-selected": { 
             color:"#FF8484"
         },
         "&:hover": {
                     color:"#FF8484",
-
+                    
                   },
         fontWeight:600,
         fontSize:"20px"
         }}/>
         <Tab label="Soft Skill" sx={{
-          "&.Mui-selected": {
+          "&.Mui-selected": { 
             color:"#FF8484"
         },
         "&:hover": {
           color:"#FF8484",
-
+          
         },
         fontWeight:600,
         fontSize:"20px"
         }}/>
       </Tabs>
-
+   
 
          <Box sx={{display:"flex",width:"100%",my:3,justifyContent:"center",position:"absolute",right: tabSkill === 0 ? 1 : '100%',transition: 'right 0.5s ease-in-out',}}>
         <Grid container >
@@ -138,9 +141,9 @@ export default function Skills() {
               <Typography sx={{mt:2}}>{text.name}</Typography>
           </Paper>
         </Grid>
-        ) )}
+        ) )} 
         </Grid>
-        </Box>
+        </Box> 
 
   <Box sx={{display:"flex",width:"100%",my:3,justifyContent:"center",position:"absolute",left: tabSkill === 1 ? 0 : '100%',transition: 'left 0.5s ease-in-out',}}>
         <Grid container >
@@ -152,10 +155,10 @@ export default function Skills() {
                         }}>
           {text.name}</Paper>
         </Grid>
-        ) )}
+        ) )} 
         </Grid>
-        </Box>
-
+        </Box>  
+ 
         </Grid>
         </Box>
       </Grid>

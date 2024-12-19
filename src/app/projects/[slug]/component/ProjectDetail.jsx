@@ -31,10 +31,8 @@ export default function ProjectDetail({ params }) {
         { name: 'JavaScript', image: javaScript },
         { name: 'React', image: react },
         { name: 'Next', image: next },
-        { name: 'Vue', image: vue },
         { name: 'Mui', image: mui },
-        { name: 'Bootstrap', image: bootstrap },
-        { name: 'Tailwind', image: tailwind },
+
     ];
 
     const WorkDetail = [
@@ -44,7 +42,7 @@ export default function ProjectDetail({ params }) {
             label: "Web Application With Responsive",
             detail: " printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             link: "www.pensook.com",
-            stack: ["Html", "Css", "JavaScript", "React", "Next", "Mui","Bootstrap","Tailwind","Vue"],
+            stack: ["Html", "Css", "JavaScript", "React", "Next", "Mui",],
             image: pensookWeb,
         },
         {
